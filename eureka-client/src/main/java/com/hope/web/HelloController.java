@@ -20,6 +20,6 @@ public class HelloController {
     public String index(@RequestParam String name) {
         ServiceInstance instance = client.getLocalServiceInstance();
         logger.info("/hello, host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
-        return "Hello World " +instance.getHost()+" "+name;
+        return "Hello World " +instance.getHost()+" "+name +" port is "+instance.getPort();
     }
 }
