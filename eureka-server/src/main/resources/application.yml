@@ -3,7 +3,7 @@ server:
 
 eureka:
   instance:
-    hostname: peer1
+    hostname: localhost
   client:
     #由于该应用为注册中心,所以设置为false,代表不向注册中心注册自己
     registerWithEureka: false
